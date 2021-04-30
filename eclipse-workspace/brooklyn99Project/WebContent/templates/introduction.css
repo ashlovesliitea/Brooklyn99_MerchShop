@@ -1,0 +1,358 @@
+
+#body{
+   
+    background-color:black;
+    margin-top:0;
+}
+#menu{
+    position:fixed;
+    list-style:none;
+    margin:0;
+    padding:0 0 25px 5px;
+    background-color:#25314df5;
+    border-bottom:1px solid #ffcc00;
+    height:20px;
+    width:100%;
+    z-index:100;
+   }
+   #menu li{
+       float:right;
+       margin:0;
+       padding:0 10px;
+   }
+   
+   #menu a{
+       display:block;
+       margin:0;
+       padding:5px 0 1px 0;
+       height:20px;
+       font-family:'Open-sans',sans-serif;
+       font-size:20px;
+       color:#ffffff;
+       text-decoration:none;
+   }
+   #menu a:visited{color:#ffffff;}
+   #menu a:hover{color:#ffcc00}
+   #menu a:active{color:#0066ff;}
+   
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:0.6;
+    }}
+
+@keyframes fadeIn2{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+#header{
+   height:35em;
+   z-index:-1;
+   background-image: linear-gradient(96deg,rgb(17,28,61,0.7),rgba(17,28,61,0.5)46%,rgba(17,28,61,0.3) 55%,rgba(17,28,61,0.2)70%,rgba(17,28,61,0.01)85%),url(image/headerimage1.jpg);
+   background-repeat:no-repeat;
+   background-size:100% 100%;
+}
+
+#header img{
+   position:absolute;
+   left:3%;
+   top:3%;
+   width:6em;
+   height:6em;
+   filter: drop-shadow(5px 5px 5px rgba(255,255,255,0.4)); 
+}
+
+.dropdown .dropdown-menu{
+    display:none;
+}
+
+.dropdown:hover .dropdown-menu { 
+    background-color:white;
+    display:block;
+    margin-top:0;
+    position:absolute;
+    padding-right:3%;
+    height:25rem;
+    width:12rem;
+    z-index:3;
+    top:5%;
+    left:8%;
+    border-radius:20px;
+    list-style:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.2rem;
+    animation:fadeIn2 .5s linear;
+}
+
+.dropdown-menu ul{
+ list-style:none;
+ text-align:center;
+}
+
+.dropdown-menu a{
+    text-decoration:none;
+}
+.dropdown:hover .dropdown-menu li{
+    padding-bottom:1rem;
+    padding-top:1rem;
+    border-bottom:solid 1px gray;
+    margin:2%;
+}
+
+#header h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-weight:800;
+    color:white;
+    position:absolute;
+    z-index:1;
+    font-size:2.5em;
+    left:10%;
+    top:25%;
+    animation:fadeIn .5s linear;
+}
+
+
+
+.intro h1{
+    text-align:center;
+    background-color:yellow;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    height:40px;
+    margin-top:0;
+    font-weight:700;
+    padding-top:10px;
+    margin-bottom:15px;
+}
+
+.introduction{
+    width:84%;
+    margin-left:9%;
+    height:40em;
+    padding-top:2%;
+    padding-bottom:2%;
+    margin-bottom:20px;
+}
+
+.introduction #player{
+    margin-left:5%;
+    width:90%;
+    height:80%;
+}
+
+.introduction #paragraph{
+    width:96%;
+    height:20%;
+    top:60%;
+    font-family:'Roboto',Arial,sans-serif;
+    margin-top:1%;
+    font-weight: 400;
+    padding-left:2%;
+    padding-right:2%;
+    padding-top:1%;
+    margin-bottom:2%;
+    text-align:center;
+    background-color:lightgray;
+    color:black;
+    border-radius:20px;
+    overflow:auto;
+}
+
+.introduction #button button{
+    margin-top:1%;
+    height:2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+     outline: none;
+}
+
+.introduction #button button:hover{
+    background-color: lightslategray;
+  box-shadow: 0px 15px 20px rgba(211, 211, 211, 0.4);
+  color: #fff;
+  transform: translateY(-7px);   
+}
+
+.Character{
+    height:22rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+.character h1{
+    text-align:center;
+    background-color:black;
+    color:yellow;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    height:18rem;
+    padding-top:40px;
+    padding-bottom:10px;
+}
+
+.slide_wrapper{
+    position:relative;
+    height:21rem;
+    width:86%;
+    left:7%;
+    overflow:hidden;
+    bottom:2rem;
+    z-index:1;
+}
+
+.slides{
+    margin-top:2rem;
+    position:absolute;
+    list-style:none;
+    display:flex;
+    transition:left 0.5s ease-out;
+}
+
+
+
+.slides li:not(:last-child){
+    margin-right:3rem;
+    
+}
+
+.slides li img{
+    height:16rem;
+    width:13rem;
+}
+
+.slides li span{
+    height:3rem;
+    text-align:center;
+    color:white;
+    padding-left:27%;
+}
+
+.controls{
+    width:100%;
+    font-size:3rem;
+    z-index:2;
+    position:relative;
+    top:-20rem;
+}
+
+.controls .prev{
+    position:absolute;
+    width:2rem;
+    height:14rem;
+    background-color:rgba(0, 0, 0, 0.4);
+    margin-left:1rem;
+    color:white;
+    margin-right:1rem;
+    left:2%;
+    text-align:center;
+}
+
+.controls .next{
+    position:absolute;
+    right:2%;
+    width:2rem;
+    height:14rem;
+    color:white;
+    background-color:rgba(0,0,0,0.3);
+    margin-left:1rem;
+    margin-right:1rem;
+    text-align:center;
+} 
+
+.bslist{
+    height:35rem;
+    width:100%;
+    display:flex;
+}
+
+.bslist1{
+   width:50%;
+   margin-top:1%;
+   border-right:solid 2px gray;
+   height:90%;
+}
+
+.bslist1 h2{
+  color:gray;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style:italic;
+  margin-left:5%;
+}
+
+.bslist1 #player2{
+    margin-left:3%;
+    width:90%;
+    height:80%;
+}
+
+.bslist2{
+    width:50%;
+}
+.bslist2 h2{
+    color:gray;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    margin-left:5%;
+}
+
+.bslist2 #player3{
+    margin-left:5%;
+    width:90%;
+    height:80%;
+}
+
+.btn{
+    display:flex;
+    margin-left:10%;
+}
+
+.where{
+    width:100%;
+    height:26rem;
+}
+.btn h2{
+    
+    color:gray;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+}
+
+.btn1{
+    width:25%;
+    margin-right:3rem;
+    
+}
+
+
+.btn2{
+    width:25%;
+    margin-right:6rem;
+}
+
+.btn3{
+    width:25%;
+}
+
+.where h3{
+    color:gray;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    text-align:center;
+}
